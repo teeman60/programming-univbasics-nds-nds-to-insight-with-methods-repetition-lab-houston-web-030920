@@ -47,12 +47,21 @@ def total_gross(source)
   # returned by directors_totals, and add it to a running total. When done,
   # return the total
   
-  sum = 0 
-  # ind = 0 
-    source.each do |dir|
-   sum += gross_for_director(dir)
+  # sum = 0 
+  #   source.each do |dir|
+  # sum += gross_for_director(dir)
+  
+  total_sum = 0 
+  i = 0 
+  while i < list_of_directors.length do
+    nam = list_of_directors[i]
+    total_sum += directors_totals["#{nam}"]
+    i += 1 
+  end
+  
+  return total_sum
     
-    # ind += 1 
+   
   end
   
   return sum
