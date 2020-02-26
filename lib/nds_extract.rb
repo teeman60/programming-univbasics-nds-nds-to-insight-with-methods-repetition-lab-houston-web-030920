@@ -48,7 +48,7 @@ def total_gross(source)
   # return the total
   
   sum = 0 
-  ind = 0 
+  # ind = 0 
     source.each do |dir|
    sum += gross_for_director(dir)
     
