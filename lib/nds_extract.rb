@@ -61,7 +61,7 @@ def total_gross(source)
    
   end
   
-  return sum
+  return total_sum
   
 end
 
